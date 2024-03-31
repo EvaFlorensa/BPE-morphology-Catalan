@@ -19,8 +19,6 @@ print(len(text))
 
 """### Base for the tokenizers"""
 
-import unicodedata
-
 def get_stats(ids, counts=None): # It takes a list of integers and returns a dictionary of counts of consecutive paris.
     counts = {} if counts is None else counts
     for pair in zip(ids, ids[1:]): # iterate consecutive elements
